@@ -64,7 +64,7 @@ export const Dashboard = () => {
         ) : tests && tests.length > 0 ? (
           <List items={visibleTests} colNames={colNames} />
         ) : (
-          <NoResults text='No data' textButton='Reload'/>
+          <NoResults text='No data' textButton='Try Again'/>
         )}
       </Container>
     </Wrapper>
