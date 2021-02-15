@@ -25,7 +25,7 @@ export const List = (props) => {
           </StyledTbody>
         </StyledTable>
       ) : (
-        <NoResults text='Your search did not match any results.' />
+        <NoResults text='Your search did not match any results.' textButton='Reset'/>
       )}
     </Fragment>
   );

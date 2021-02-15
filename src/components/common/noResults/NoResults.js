@@ -8,7 +8,7 @@ export const NoResults = (props) => {
     <Wrapper>
       <StyledText>{props.text}</StyledText>
       <StyledButton onClick={() => window.location.reload()} type='primary'>
-        Reset
+        {props.textButton}
       </StyledButton>
     </Wrapper>
   );
@@ -16,4 +16,5 @@ export const NoResults = (props) => {
 
 NoResults.propTypes = {
   text: PropTypes.string.isRequired,
+  textButton: PropTypes.string.isRequired
 };
