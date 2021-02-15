@@ -3,8 +3,8 @@ import { SearchBar } from '../common/search/SearchBar';
 import { Spinner } from '../common/spinner/Spinner';
 import { List } from '../list/List';
 import { Wrapper, Title, Container } from './styled';
-import { NoResults } from '../noResults/NoResults';
 import { ABTestService } from '../services/ABTestService';
+import { NoResults } from '../common/noResults/NoResults';
 
 export const Dashboard = () => {
   const [tests, setTests] = useState(null);

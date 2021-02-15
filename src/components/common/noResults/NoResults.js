@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledButton } from '../list/styled';
 import { StyledText, Wrapper } from './styled';
 import PropTypes from 'prop-types';
+import { StyledButton } from '../../list/styled';
 
 export const NoResults = (props) => {
   return (

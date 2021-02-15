@@ -28,6 +28,6 @@ export const Rows = (props) => {
     : [];
 };
 
-Row.propTypes = {
+Rows.propTypes = {
   items: PropTypes.array.isRequired,
 };

@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { useSortableData } from '../helpers/Sort';
-import { NoResults } from '../noResults/NoResults';
 import { Cols } from './Cols';
 import { Rows } from './Rows';
 import { StyledTable, StyledThead, StyledTbody } from './styled';
 import PropTypes from 'prop-types';
+import { NoResults } from '../common/noResults/NoResults';
 
 export const List = (props) => {
   const { requestSort, sortConfig } = useSortableData(props.items);

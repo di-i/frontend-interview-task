@@ -29,7 +29,7 @@ export const Cols = (props) => {
   );
 };
 
-Col.propTypes = {
+Cols.propTypes = {
   requestSort: PropTypes.func.isRequired,
   sortConfig: PropTypes.object,
   colNames: PropTypes.array.isRequired,
