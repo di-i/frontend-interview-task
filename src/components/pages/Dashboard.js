@@ -27,15 +27,17 @@ export const Dashboard = () => {
     getAllTests();
   }, []);
 
+  const filterItemsbyText = (items, searchText) => {
+    return items.filter((item) => {
+      return Object.keys(item).some((key) =>
+        item[key].toString().toLowerCase().includes(searchText)
+      );
+    });
+  };
+
   useEffect(() => {
     const filterTests = () => {
-      let filteredTests = tests
-        ? tests.filter((item) => {
-            return Object.keys(item).some((key) =>
-              item[key].toString().toLowerCase().includes(searchText)
-            );
-          })
-        : [];
+      let filteredTests = tests ? filterItemsbyText(tests, searchText) : [];
       setVisibleTests(filteredTests);
     };
     filterTests();
