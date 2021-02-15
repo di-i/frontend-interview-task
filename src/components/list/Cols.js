@@ -7,7 +7,7 @@ import {
 } from './styled';
 import PropTypes from 'prop-types';
 
-export const Col = (props) => {
+export const Cols = (props) => {
   const { colNames, requestSort, sortConfig } = props;
   return (
     <StyledTr>

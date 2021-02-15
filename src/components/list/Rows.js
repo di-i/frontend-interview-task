@@ -3,7 +3,7 @@ import Helpers from '../helpers/Helpers';
 import { StyledButton, StyledTd, StyledTr } from './styled';
 import PropTypes from 'prop-types';
 
-export const Row = (props) => {
+export const Rows = (props) => {
   return props.items
     ? props.items.map((item) => {
         const { id, name, type, status, site, siteId } = item;
