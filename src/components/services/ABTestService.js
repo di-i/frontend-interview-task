@@ -8,7 +8,7 @@ ABTestService.getAll = async function () {
   const tests = await ApiService.getAllABTests();
   let cachedSites = {};
   sites.forEach((item) => {
-    cachedSites[item.id] = item.url;
+    cachedSites[item.id] = Helpers.removeProtocolFromUrl(item.url);
   });
   for (let test of tests) {
     let type = Helpers.titleCase(test.type);
@@ -20,4 +20,3 @@ ABTestService.getAll = async function () {
   }
   return tests;
 };
-
